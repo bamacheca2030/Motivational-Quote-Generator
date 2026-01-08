@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Motivational Quote Generator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      max-width: 500px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #quote {
+      font-style: italic;
+      font-size: 18px;
+      margin: 20px 0;
+      color: #555;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4338ca;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Motivational Quote Generator</h1>
+    <p id="quote">Click the button to get a quote.</p>
+    <button onclick="newQuote()">New Quote</button>
+  </div>
+
+  <script>
+    function newQuote() {
+      var quotes = [
+        "You must be the change you wish to see in the world.",
+        "The more you sweat in practice, the less you bleed in battle.",
+        "If you're brave enough to say goodbye, life will reward you with a new hello.",
+        "Whatever you are, be a good one.",
+        "You will face many defeats in life, but never let yourself be defeated.",
+        "It always seems impossible until it's done.",
+        "We grow through what we go through.",
+        "Let go and let God."
+      ];
+
+      var randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote").innerText = quotes[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
+Sent
+Write to
